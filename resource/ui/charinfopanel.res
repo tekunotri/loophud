@@ -110,6 +110,45 @@
 		}
 	}
 	
+	"BackShortcut"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BackShortcut"
+		"xpos"			"2017" 
+		"ypos"			"rs1-20"
+		"zpos"			"1"
+		"wide"			"48"
+		"tall"			"48"
+		"visible"		"1"
+		"enabled"		"1"
+		"SubButton"
+		{
+			"ControlName"	"CImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"cs-0.5"
+			"ypos"			"cs-0.5"
+			"wide"			"48"
+			"tall"			"48"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"&Q"
+			"font"			"HudFontSmallBold"
+			"command"		"back"
+
+			"actionsignallevel" "2"
+			"proportionaltoparent"	"1"
+				
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick_back.wav"
+			"paintbackground"	"0"
+			"paintborder"		"0"
+			"scaleImage"		"1"
+
+			"inactiveimage"		"replay/thumbnails/loophud_ui/buttons/default_back"
+			"activeimage"		"replay/thumbnails/loophud_ui/buttons/armed_back"
+		}
+	}
+	
 	"NotificationsPresentPanel"
 	{
 		"ControlName"	"CNotificationsPresentPanel"

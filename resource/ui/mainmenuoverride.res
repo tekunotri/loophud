@@ -1290,7 +1290,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ServerButton"
-		"xpos"			"c-338"
+		"xpos"			"c-308"
 		"ypos"			"152"
 		"wide"			"180"
 		"tall"			"45"
@@ -1490,6 +1490,59 @@
 		"pin_to_sibling"	"loop_AdvancedButton"
 	}	
 
+	"loop_ConsoleButton" //console button
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"loop_ConsoleButton"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"180"
+		"tall"			"45"
+		"visible"		"1"
+		"enabled"		"1"
+		"font"			"futura-demi-40"
+		"textAlignment"	"center"
+		
+		"command"		"engine toggleconsole"
+		"labeltext"		"CONSOLE"
+		"sound_armed"		"UI/buttonrollover.wav"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"proportionaltoparent"	"1"
+			
+		"paintbackground"	"0"
+
+		"border_default"		"null"
+		"border_armed"			"streak_orange"
+				
+		"image_drawcolor"		"loop_offwhite"
+		"image_armedcolor"		"loop_orange"
+
+		"pin_to_sibling"		"loop_AdvancedButton"
+		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
+		"pin_corner_to_sibling"	"PIN_CENTER_TOP"
+	} //loophud advanced settings button
+	"loop_ConsoleButton_shadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"loop_ConsoleButton_shadow"
+		"xpos"			"5"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"180"
+		"tall"			"45"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+
+		"labeltext"		"CONSOLE"
+		"fgcolor"		"loop_black"
+		"font"			"futura-demi-40"
+		"textAlignment"	"center"
+
+		"pin_to_sibling"	"loop_ConsoleButton"
+	}	
+
+
 	"loop_QuitButton" //advanced settings button
 	{
 		"ControlName"	"CExImageButton"
@@ -1518,9 +1571,10 @@
 		"image_drawcolor"		"loop_offwhite"
 		"image_armedcolor"		"loop_orange"
 
-		"pin_to_sibling"		"loop_AdvancedButton"
+		"pin_to_sibling"		"loop_ConsoleButton"
 		"pin_to_sibling_corner"	"PIN_CENTER_BOTTOM"
-		"pin_corner_to_sibling"	"PIN_CENTER_TOP"	
+		"pin_corner_to_sibling"	"PIN_CENTER_TOP"
+
 	} //loophud quit button
 	"loop_QuitButton_shadow"
 	{

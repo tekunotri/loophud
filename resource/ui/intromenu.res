@@ -84,7 +84,30 @@
 		"command"		"skip"
 		"font"			"MenuSmallFont"
 	}
-	
+
+	"ContinueBind" [$WIN32] 
+	{
+		"ControlName"		"CExButton"
+		"fieldName"		"ContinueBind"
+		"xpos"			"2017"
+		"ypos"			"r40"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			"30"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"labelText"		"&E"
+		"textAlignment"		"center"
+		
+		
+		"wrap"		"0"
+		"command"		"skip"
+		"font"			"MenuSmallFont"
+	}
+
 	"Back" [$WIN32] 
 	{
 		"ControlName"	"CExButton"

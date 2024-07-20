@@ -326,7 +326,7 @@
 	
 
 
-	"sidebutton_bg"
+	"sidebutton_bg" //i cant be fucked to edit this
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"sidebutton_bg"

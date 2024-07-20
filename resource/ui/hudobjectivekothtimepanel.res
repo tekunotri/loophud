@@ -1,44 +1,22 @@
 "Resource/UI/HudObjectiveKothTimePanel.res"
-{	
+{
 	"HudKothTimeStatus"
 	{
 		if_match
 		{
 			"zpos"		"5"
-			"wide"		"120"
-			"xpos"		"cs-0.5"
+			"ypos"		"-4" //scuffed hack to put the timer in correct position
 		}
 	}
-
-	"TimePanelValueBG"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"TimePanelValueBG"
-		"xpos"			"cs-0.5"
-		"ypos"			"0"
-		"tall"			"20"
-		"wide"			"160"
-		"visible"		"0"
-		"enabled"		"1"
-		"scaleImage"	"1"
-		"drawcolor"		"loop_black"
-
-		"proportionaltoparent"	"1"
-
-		"image"	"replay/thumbnails/loophud_ui/short_brushstroke"
-
-		if_match
-		{
-			"visible"		"1"
-		}
-	}	
 
 	"BlueTimer"
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"BlueTimer"
 		"xpos"				"0"
-		"ypos"				"-2"
+		"xpos_mindisabled"		"20"
+		"ypos"				"-17"
+		"ypos_mindisabled"		"-14"
 		"zpos"				"2"
 		"wide"				"100"
 		"tall"				"150"
@@ -52,13 +30,13 @@
 		"delta_lifetime"		"1.5"
 		"delta_item_font"		"futura-heavy-20"
 
-		"proportionaltoparent"	"1"
-
 		if_match
 		{
 			"proportionaltoparent"	"1"
-			"xpos"					"cs-1"
-			"ypos"					"-2"
+			"xpos"					"cs-0.5"
+			"xpos_mindisabled"			"cs-0.5"
+			"ypos"					"0"
+			"ypos_mindisabled"			"0"
 			"delta_item_x"			"10"
 			"delta_item_start_y"	"12"
 			"delta_item_end_y"		"50"
@@ -67,35 +45,43 @@
 			"delta_lifetime"		"1.5"
 			"delta_item_font"		"futura-heavy-16"
 		}
-		
+
 		"TimePanelValue"
 		{
-			"ControlName"	"CExLabel"
+			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"futura-heavy-20"
+			"font"			"futura-heavy-16"
 			"fgcolor"		"loop_secondary"
 			"xpos"			"23"
 			"ypos"			"11"
+			"ypos_mindisabled"	"6"
 			"zpos"			"3"
 			"wide"			"45"
+			"wide_mindisabled"	"30"
+			"wide_lodef"	"50"
 			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"	"center"
+			"textAlignment"		"center"
 			"labelText"		"0:00"
 
 			if_match
 			{
 				"proportionaltoparent"	"1"
 
-				"xpos"			"rs1"
-				"ypos"			"2"
-				"tall"			"20"
-				"wide"			"60"
-				"font"			"futura-heavy-20"
-			
+				"xpos"			"15"
+				"xpos_mindisabled"	"15"
+				"ypos"			"12"
+				"ypos_mindisabled"	"12"
+				"tall"			"10"
+				"wide"			"35"
+				"wide_mindisabled"	"35"
+				"font"			"futura-heavy-14"
+				"font_mindisabled"	"futura-heavy-14"
+				"font_lodef"	"futura-heavy-14"
+
 			}
-		}	
+		}
 	}
 
 	"RedTimer"
@@ -103,7 +89,9 @@
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"RedTimer"
 		"xpos"				"90"
-		"ypos"				"-2"
+		"xpos_mindisabled"		"70"
+		"ypos"				"-17"
+		"ypos_mindisabled"		"-14"
 		"zpos"				"2"
 		"wide"				"100"
 		"tall"				"150"
@@ -112,18 +100,18 @@
 		"delta_item_x"			"22"
 		"delta_item_start_y"	"50"
 		"delta_item_end_y"		"70"
-		"PositiveColor"			"0 255 0 255"
+		"PositiveColor"			"13 255 13 255"
 		"NegativeColor"			"255 0 0 255"
 		"delta_lifetime"		"1.5"
-		"delta_item_font"		"HudFontMedium"
-
-		"proportionaltoparent"	"1"
+		"delta_item_font"		"futura-heavy-20"
 
 		if_match
 		{
 			"proportionaltoparent"	"1"
-			"xpos"					"c0"
-			"ypos"					"-2"
+			"xpos"					"cs-0.5"
+			"xpos_mindisabled"			"cs-0.5"
+			"ypos"					"0"
+			"ypos_mindisabled"			"0"
 			"delta_item_x"			"50"
 			"delta_item_start_y"	"12"
 			"delta_item_end_y"		"50"
@@ -132,47 +120,64 @@
 			"delta_lifetime"		"1.5"
 			"delta_item_font"		"futura-heavy-16"
 		}
-		
+
 		"TimePanelValue"
 		{
-			"ControlName"	"CExLabel"
+			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"futura-heavy-20"
-			"fgcolor"		"loop_secondary"
+			"font"			"futura-heavy-16"
+			"font_mindisabled"	"futura-heavy-14"
+			"font_lodef"	"futura-heavy-20"
+			"fgcolor"		"loop_primary"
 			"xpos"			"23"
+			"xpos_mindisabled"	"39"
+			"xpos_hidefdisabled"	"114"
+			"xpos_lodefdisabled"	"114"
 			"ypos"			"11"
+			"ypos_mindisabled"	"6"
+			"ypos_hidef"	"15"
+			"ypos_lodefdisabled"	"18"
 			"zpos"			"3"
 			"wide"			"45"
+			"wide_mindisabled"	"30"
+			"wide_lodef"	"50"
 			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"
 			"textAlignment"		"center"
 			"labelText"		"0:00"
 
-			"proportionaltoparent"	"1"
-
 			if_match
 			{
-				"xpos"			"0"
-				"ypos"			"2"
-				"wide"			"60"
-				"tall"			"20"
+				"proportionaltoparent"	"1"
+
+				"xpos"			"rs1-15"
+				"xpos_mindisabled"	"rs1-15"
+				"ypos"			"12"
+				"ypos_mindisabled"	"12"
+				"wide"			"35"
+				"wide_mindisabled"	"35"
+				"tall"			"10"
+				"font"			"futura-heavy-14"
+				"font_mindisabled"	"futura-heavy-14"
+				"font_lodef"	"futura-heavy-14"
+
 			}
-		}	
+		}
 	}
-	
+
 	"ActiveTimerBG"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"ActiveTimerBG"
-		"xpos"				"9999"
-		"ypos"				"9"
+		"xpos"				"0"
+		"ypos"				"0"
 		"zpos"				"1"
 		"wide"				"78"
-		"tall"				"33"
+		"tall"				"18"
 		"visible"			"0"
-		"enabled"			"0"
-		"image"				"../hud/objectives_timepanel_active_bg"	
-		"scaleImage"		"1"	
+		"enabled"			"1"
+		"fillcolor"			"TransparentDarkerGray"
+		"scaleImage"		"1"
 	}
 }

@@ -160,7 +160,32 @@
 
 		"default"		"1"
 	}
-	
+
+	"MapInfoContinueBind"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"MapInfoContinueBind"
+		"xpos"			"2017"
+		"ypos"			"r40"
+		"zpos"			"6"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"&E"
+		"textAlignment"	"center"
+		
+		"command"		"continue"
+		"font"			"futura-heavy-20"
+
+		"defaultFgColor_override"	"loop_primary"
+		"armedfgcolor_override"		"loop_black"
+		"defaultBgColor_override"	"loop_black"
+		"armedBgColor_override"		"loop_primary"
+
+		"default"		"1"
+	}
+
 	"MapInfoWatchIntro"
 	{
 		"ControlName"	"CExButton"

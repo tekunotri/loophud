@@ -127,8 +127,8 @@ Scheme
 		
 		"HTMLBackground"						"95 92 101 255"
 		
-		"ItemAttribLevel"						"117 107 94 255"
-		"ItemAttribNeutral"						"235 226 202 255"
+		"ItemAttribLevel"						"255 255 255 255"
+		"ItemAttribNeutral"						"255 255 255 255"
 		"ItemAttribPositive"					"153 204 255 255"
 		"ItemAttribNegative"					"255 64 64 255"
 
@@ -2369,16 +2369,9 @@ Scheme
 			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"0"	
 		}
-		LoadoutItemPopupBorder
+		"LoadoutItemPopupBorder" // reused a couple of times for convenience all over the hud.
 		{
-			"bordertype"			"scalable_image"
-			"backgroundtype"		"2"
-			
-			"image"					"button_holder_central"
-			"src_corner_height"		"32"				// pixels inside the image
-			"src_corner_width"		"32"
-			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"image" "White" "color" "loop_primary_dark" "bordertype" "scalable_image"
 		}
 		
 		BackpackItemGrayedOut
