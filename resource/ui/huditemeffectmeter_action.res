@@ -1,14 +1,24 @@
+
 "Resource/UI/HudItemEffectMeter_Action.res"
 {
-	"ItemEffectMeter"
+	HudItemEffectMeter
 	{
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ItemEffectMeter"
-		"xpos"										"9999"
-		"ypos"										"9999"
-		"wide"										"0"
-		"tall"										"0"
-		"visible"									"0"
-		"enabled"									"0"
+		"fieldName"		"HudItemEffectMeter"
+		"visible"		"1"
+		"enabled"		"1"
+		"xpos"			"rs1-5"
+		"ypos"			"rs1-5"
+		"wide"			"50"
+		"tall"			"50"
+		"MeterFG"		"White"
+		"MeterBG"		"Gray"
+	}
+
+
+	"ItemEffectMeter" 
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ItemEffectMeter"
+		"xpos"					"9999"
 	}
 }
