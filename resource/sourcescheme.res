@@ -149,7 +149,7 @@ Scheme
 				"name" "IBM Plex Mono Regular"
 				"tall" "16"
 				"weight" "900"
-				"antialias" "0"
+				"antialias" "1"
 				"yres"			"480 1079"
 			}
 			"2"
